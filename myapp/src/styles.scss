@@ -21809,7 +21809,7 @@ nav.nav-flat .navbar-brand{
     padding-right:68px
 }
  .img-wrapper img {
-     width: 265px;
+     width: 100%;
      height: 187px;
 }
  .flags-icon {
@@ -21830,4 +21830,8 @@ mat-basic-audio-player {
 
 .has-items-overlay figure .figcaption, .masonry-container figure .figcaption {
     padding: 50px 50px !important;
+}
+
+.mb-auto, .my-auto {
+    display: none !important;
 }

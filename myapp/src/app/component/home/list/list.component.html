@@ -1,0 +1,34 @@
+<main id="pageContent" class="page has-sidebar">
+
+    <div class="container-fluid relative animatedParent animateOnce">
+        <div class="animated fadeInUpShort p-5 ml-lg-5 mr-lg-5 go">
+            <section>
+                <div class="relative mb-5">
+                    <h1 class="mb-2 text-primary">Najpopularnije radio stanice</h1>
+                    <p>Spisak najpopularnijih radio stanica.</p>
+                    <p>Lista se svakodnevno azurira!</p>
+                </div>
+                <div class="row has-items-overlay">
+                    <div class="col-lg-3 col-md-4 col-sm-6 my-2" *ngFor="let item of radioStation">
+                        <figure>
+                            <div class="img-wrapper">
+                                <img [src]="item.img" alt="/">
+                                <div class="img-overlay text-white text-center" style="padding: 30% 40% !important;">
+                                    <mat-basic-audio-player [audioUrl]="item.url" [title]="msbapTitle"
+                                        [displayTitle]="msbapDisplayTitle"
+                                        [displayVolumeControls]="msaapDisplayVolumeControls">
+                                    </mat-basic-audio-player>
+                                </div>
+                                <div class="figure-title text-center p-2">
+                                    <h5 class="mt-5">{{item.title}}</h5>
+                                    <span>{{item.text}}</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</main>

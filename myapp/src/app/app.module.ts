@@ -19,11 +19,15 @@ import { HomeComponent } from './component/home/home.component';
 
 //services
 import { AppService } from './service/app.service';
+import { ListComponent } from './component/home/list/list.component';
+import { AboutUsComponent } from './component/home/about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    ListComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,
