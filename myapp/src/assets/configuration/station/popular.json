@@ -1,0 +1,20 @@
+[
+    {
+        "img": "assets/img/demo/a8.jpg",
+        "title": "Play Radio",
+        "text": "107.7 FM",
+        "url": "http://naxi128.streaming.rs:9150/;*.mp3"
+    },
+    {
+        "img": "assets/img/demo/a2.jpg",
+        "title": "Hit FM",
+        "text": "99.9 FM",
+        "url": "http://streaming11.tdiradio.com:8000/hit"
+    },
+    {
+        "img": "assets/img/demo/a7.jpg",
+        "title": "Radio Rock",
+        "text": "122.2 FM",
+        "url": "http://ca6.rcast.net:4020/stream"
+    }
+]

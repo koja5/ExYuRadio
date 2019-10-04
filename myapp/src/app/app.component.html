@@ -373,7 +373,7 @@
                                     data-pauseonhover="true" data-auto="false" data-pager="false" data-loop="true"
                                     style="width: 1269px; transform: translate3d(0px, 0px, 0px); height: 440px; padding-bottom: 0%;">
                                     <div class="xv-slide lslide active" data-bg-possition="top"
-                                        style="background-image: url(&quot;assets/img/demo/b1.jpg&quot;); width: 1269px; margin-right: 0px;">
+                                        style="background-image: url(&quot;assets/img/demo/b1.jpg&quot;); width: 100% !important;">
                                         <div class="has-bottom-gradient">
                                             <div class="p-md-5 p-3">
                                                 <div class="row">
@@ -395,7 +395,7 @@
                                         <div class="bottom-gradient"></div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -412,218 +412,41 @@
                             </div>
                             <a href="albums.html">Cela lista<i class="icon-angle-right ml-3"></i></a>
                         </div>
-                        <div class="lSSlideOuter ">
+                        <div class="lSSlideOuter " *ngIf="popularRadio !== undefined">
                             <div class="lSSlideWrapper usingCss">
                                 <div class="lightSlider has-items-overlay playlist lsGrab showSlider lSSlide"
                                     data-item="6" data-item-lg="3" data-item-md="3" data-item-sm="2" data-auto="false"
                                     data-pager="false" data-controls="true" data-loop="false"
                                     style="width: 1380.17px; height: 268px; padding-bottom: 0%; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="lslide active" style="width: 187.167px; margin-right: 10px;">
+                                    <div *ngFor="let item of popularRadio" class="lslide active"
+                                        style="width: 187.167px; margin-right: 10px;">
                                         <figure>
                                             <div class="img-wrapper">
-                                                <img src="assets/img/demo/a8.jpg" alt="/">
+                                                <img [src]="item.img" alt="/">
                                                 <div class="img-overlay text-white">
                                                     <div class="figcaption">
                                                         <ul
                                                             class="list-inline d-flex align-items-center justify-content-between">
-                                                            <li class="list-inline-item ">
-                                                                <a class="no-ajaxy media-url"
-                                                                    href="assets/media/track2.mp3"
-                                                                    data-wave="assets/media/track2.json">
-                                                                    <i class="fa fa-play s-48"></i>
-                                                                </a>
-                                                            </li>
+                                                            <mat-basic-audio-player [audioUrl]="item.url"
+                                                                [title]="msbapTitle" [displayTitle]="msbapDisplayTitle"
+                                                                [displayVolumeControls]="msaapDisplayVolumeControls">
+                                                            </mat-basic-audio-player>
                                                         </ul>
                                                         <div class="text-center mt-5">
-                                                            <h5>Play Radio</h5>
-                                                            <span>107.7 FM</span>
+                                                            <h5>{{item.title}}</h5>
+                                                            <span>{{item.text}}</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="figure-title text-center p-2">
-                                                    <h5>Play Radio</h5>
-                                                    <span>107.7 FM</span>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div class="lslide" style="width: 187.167px; margin-right: 10px;">
-                                        <figure>
-                                            <div class="img-wrapper">
-                                                <img src="assets/img/demo/a1.jpg" alt="/">
-                                                <div class="img-overlay text-white">
-                                                    <div class="figcaption">
-                                                        <ul
-                                                            class="list-inline d-flex align-items-center justify-content-between">
-                                                            <li class="list-inline-item ">
-                                                                <a class="no-ajaxy media-url"
-                                                                    href="assets/media/track2.mp3"
-                                                                    data-wave="assets/media/track2.json">
-                                                                    <i class="fa fa-play s-48"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="text-center mt-5">
-                                                            <h5>Naxi radio</h5>
-                                                            <span>96.9 FM</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="figure-title text-center p-2">
-                                                    <h5>Naxi radio</h5>
-                                                    <span>96.9 FM</span>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div class="lslide" style="width: 187.167px; margin-right: 10px;">
-                                        <figure>
-                                            <div class="img-wrapper">
-                                                <img src="assets/img/demo/a2.jpg" alt="/">
-                                                <div class="img-overlay text-white">
-                                                    <div class="figcaption">
-                                                        <ul
-                                                            class="list-inline d-flex align-items-center justify-content-between">
-                                                            <li class="list-inline-item ">
-                                                                <a class="no-ajaxy media-url"
-                                                                    href="assets/media/track2.mp3"
-                                                                    data-wave="assets/media/track2.json">
-                                                                    <i class="fa fa-play s-48"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="text-center mt-5">
-                                                            <h5>Hit FM</h5>
-                                                            <span>92.3 FM</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="figure-title text-center p-2">
-                                                    <h5>Hit FM</h5>
-                                                    <span>92.3 FM</span>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div class="lslide" style="width: 187.167px; margin-right: 10px;">
-                                        <figure>
-                                            <div class="img-wrapper">
-                                                <img src="assets/img/demo/a4.jpg" alt="/">
-                                                <div class="img-overlay text-white">
-                                                    <div class="figcaption">
-                                                        <ul
-                                                            class="list-inline d-flex align-items-center justify-content-between">
-                                                            <li class="list-inline-item ">
-                                                                <a class="no-ajaxy media-url"
-                                                                    href="assets/media/track2.mp3"
-                                                                    data-wave="assets/media/track2.json">
-                                                                    <i class="fa fa-play s-48"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="text-center mt-5">
-                                                            <h5>COOL Radio</h5>
-                                                            <span>99.9 FM</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="figure-title text-center p-2">
-                                                    <h5>COOL Radio</h5>
-                                                    <span>99.9 FM</span>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div class="lslide" style="width: 187.167px; margin-right: 10px;">
-                                        <figure>
-                                            <div class="img-wrapper">
-                                                <img src="assets/img/demo/a5.jpg" alt="/">
-                                                <div class="img-overlay text-white">
-                                                    <div class="figcaption">
-                                                        <ul
-                                                            class="list-inline d-flex align-items-center justify-content-between">
-                                                            <li class="list-inline-item ">
-                                                                <a class="no-ajaxy media-url"
-                                                                    href="assets/media/track2.mp3"
-                                                                    data-wave="assets/media/track2.json">
-                                                                    <i class="fa fa-play s-48"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="text-center mt-5">
-                                                            <h5>Radio 43</h5>
-                                                            <span>102.2 FM</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="figure-title text-center p-2">
-                                                    <h5>Radio 43</h5>
-                                                    <span>102.2 FM</span>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div class="lslide" style="width: 187.167px; margin-right: 10px;">
-                                        <figure>
-                                            <div class="img-wrapper">
-                                                <img src="assets/img/demo/a6.jpg" alt="/">
-                                                <div class="img-overlay text-white">
-                                                    <div class="figcaption">
-                                                        <ul
-                                                            class="list-inline d-flex align-items-center justify-content-between">
-                                                            <li class="list-inline-item ">
-                                                                <a class="no-ajaxy media-url"
-                                                                    href="assets/media/track2.mp3"
-                                                                    data-wave="assets/media/track2.json">
-                                                                    <i class="fa fa-play s-48"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="text-center mt-5">
-                                                            <h5>Radio FIRE</h5>
-                                                            <span>101.1 FM</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="figure-title text-center p-2">
-                                                    <h5>Radio FIRE</h5>
-                                                    <span>101.1 FM</span>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </div>
-                                    <div class="lslide" style="width: 187.167px; margin-right: 10px;">
-                                        <figure>
-                                            <div class="img-wrapper">
-                                                <img src="assets/img/demo/a7.jpg" alt="/">
-                                                <div class="img-overlay text-white">
-                                                    <div class="figcaption">
-                                                        <ul
-                                                            class="list-inline d-flex align-items-center justify-content-between">
-                                                            <li class="list-inline-item ">
-                                                                <a class="no-ajaxy media-url"
-                                                                    href="assets/media/track2.mp3"
-                                                                    data-wave="assets/media/track2.json">
-                                                                    <i class="fa fa-play s-48"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="text-center mt-5">
-                                                            <h5>Rock Radio</h5>
-                                                            <span>98.7 FM</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="figure-title text-center p-2">
-                                                    <h5>Rock Radio</h5>
-                                                    <span>98.7 FM</span>
+                                                    <h5>{{item.title}}</h5>
+                                                    <span>{{item.text}}</span>
                                                 </div>
                                             </div>
                                         </figure>
                                     </div>
 
                                 </div>
-                               
                             </div>
                         </div>
                     </section>
@@ -777,7 +600,7 @@
                                         <div class="bottom-gradient bottom-gradient-thumbnail"></div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </section>
@@ -1410,8 +1233,11 @@
                                                         <ul
                                                             class="list-inline d-flex align-items-center justify-content-between">
                                                             <li class="list-inline-item ">
-                                                                    <mat-basic-audio-player [audioUrl]="msbapAudioUrl" [title]="msbapTitle" 
-                                                                    [displayTitle]="msbapDisplayTitle" [displayVolumeControls]="msaapDisplayVolumeControls" ></mat-basic-audio-player>
+                                                                <mat-basic-audio-player [audioUrl]="msbapAudioUrl"
+                                                                    [title]="msbapTitle"
+                                                                    [displayTitle]="msbapDisplayTitle"
+                                                                    [displayVolumeControls]="msaapDisplayVolumeControls">
+                                                                </mat-basic-audio-player>
                                                             </li>
                                                         </ul>
                                                         <div class="text-center mt-5">
@@ -1603,7 +1429,7 @@
                                     </div>
 
                                 </div>
-                                
+
                             </div>
                         </div>
                     </section>
@@ -1613,8 +1439,8 @@
             </div>
         </div>
     </main>
-    <mat-basic-audio-player [audioUrl]="msbapAudioUrl" [title]="msbapTitle" 
-    [displayTitle]="msbapDisplayTitle" [displayVolumeControls]="msaapDisplayVolumeControls" ></mat-basic-audio-player>
+    <mat-basic-audio-player [audioUrl]="msbapAudioUrl" [title]="msbapTitle" [displayTitle]="msbapDisplayTitle"
+        [displayVolumeControls]="msaapDisplayVolumeControls"></mat-basic-audio-player>
 
 
 </body>

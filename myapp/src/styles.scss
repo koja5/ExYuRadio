@@ -14362,7 +14362,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object{
 }
 .lSSlideOuter .lSPager,.lSSlideOuter .lightSlider{
     padding-left:0;
-    list-style:none outside none
+    list-style:none outside none;
+    width: 100% !important;
 }
 .lSSlideOuter.lSrtl .lSPager,.lSSlideOuter.lSrtl .lightSlider{
     padding-right:0
@@ -17027,7 +17028,7 @@ ul.list-group.list-group-hover li:hover{
     background:0 0!important
 }
 .lightSlider .lslide{
-    position:relative
+    position:relative;
 }
 .lightSlider .slide-caption{
     position:absolute;
@@ -21817,4 +21818,16 @@ nav.nav-flat .navbar-brand{
 
 .list-inline-item {
     margin: auto;
+}
+
+mat-basic-audio-player {
+    width: 100% !important;
+}
+
+.ngx-basic-audio-player {
+    min-width: 100% !important;
+}
+
+.has-items-overlay figure .figcaption, .masonry-container figure .figcaption {
+    padding: 50px 50px !important;
 }

@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 
@@ -12,8 +13,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxAudioPlayerModule } from 'ngx-audio-player';
 
+//components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
+
+//services
+import { AppService } from './service/app.service';
 
 @NgModule({
   declarations: [
@@ -32,6 +37,7 @@ import { HomeComponent } from './component/home/home.component';
     NgxAudioPlayerModule
   ],
   providers: [
+    AppService
   ],
   bootstrap: [AppComponent]
 })
