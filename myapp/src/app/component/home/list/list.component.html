@@ -1,4 +1,6 @@
-<main id="pageContent" class="page has-sidebar">
+<div class="spinner loading" *ngIf="loading"></div>
+
+<main *ngIf="selectedRadio === undefined && !loading" id="pageContent" class="page has-sidebar">
 
     <div class="container-fluid relative animatedParent animateOnce">
         <div class="animated fadeInUpShort p-5 ml-lg-5 mr-lg-5 go">
@@ -14,10 +16,13 @@
                             <div class="img-wrapper">
                                 <img [src]="item.img" alt="/">
                                 <div class="img-overlay text-white text-center" style="padding: 30% 40% !important;">
-                                    <mat-basic-audio-player [audioUrl]="item.url" [title]="msbapTitle"
-                                        [displayTitle]="msbapDisplayTitle"
-                                        [displayVolumeControls]="msaapDisplayVolumeControls">
-                                    </mat-basic-audio-player>
+                                    <ul class="list-inline d-flex align-items-center justify-content-between">
+                                        <li class="list-inline-item ">
+                                            <a (click)="clickRadioDetails(item)">
+                                                <i class="fa fa-play s-48"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="figure-title text-center p-2">
                                     <h5 class="mt-5">{{item.title}}</h5>
@@ -32,3 +37,6 @@
     </div>
 
 </main>
+
+<app-single-radio *ngIf="selectedRadio !== undefined" [data]="selectedRadio" (backEvent)="back($event)">
+</app-single-radio>

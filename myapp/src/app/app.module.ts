@@ -12,6 +12,9 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxAudioPlayerModule } from 'ngx-audio-player';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+
+import 'hammerjs';
 
 //components
 import { AppComponent } from './app.component';
@@ -21,6 +24,7 @@ import { HomeComponent } from './component/home/home.component';
 import { AppService } from './service/app.service';
 import { ListComponent } from './component/home/list/list.component';
 import { AboutUsComponent } from './component/home/about-us/about-us.component';
+import { SingleRadioComponent } from './component/home/list/single-radio/single-radio.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,7 @@ import { AboutUsComponent } from './component/home/about-us/about-us.component';
     HomeComponent,
     ListComponent,
     AboutUsComponent,
+    SingleRadioComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { AboutUsComponent } from './component/home/about-us/about-us.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    NgxAudioPlayerModule
+    NgxAudioPlayerModule,
+    InputsModule
   ],
   providers: [
     AppService

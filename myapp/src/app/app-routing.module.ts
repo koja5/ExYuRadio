@@ -6,12 +6,15 @@ import { Routes, RouterModule } from '@angular/router';
 //components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
+import { SingleRadioComponent } from './component/home/list/single-radio/single-radio.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'popular', component: ListComponent },
-  { path: 'serbia', component: ListComponent }
+  { path: 'serbia', component: ListComponent },
+  { path: 'macedonia', component: ListComponent },
+  { path: 'single', component: SingleRadioComponent }
 ];
 
 @NgModule({

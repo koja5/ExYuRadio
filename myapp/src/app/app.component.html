@@ -1,4 +1,4 @@
-<body class="sidebar-mini theme-dark  sidebar-expanded-on-hover {{sidebar}}">
+<body class="sidebar-mini {{theme}}  sidebar-expanded-on-hover {{sidebar}}">
 
     <aside class="main-sidebar fixed offcanvas shadow" data-toggle='offcanvas'>
         <div class="sidebar" (mouseenter)="sidebarCollapse()" (mouseleave)="sidebarCollapse()">
@@ -276,7 +276,7 @@
                 <a (click)="sidebarCollapse()" data-toggle="push-menu" class="paper-nav-toggle pp-nav-toggle ml-2 mr-2">
                     <i></i>
                 </a>
-                <a class="navbar-brand d-none d-lg-block" href="index.html">
+                <a class="navbar-brand d-none d-lg-block" [routerLink]="['/']">
                     <div class="d-flex align-items-center s-14 l-s-2">
                         <span>ExYuRadio</span>
                     </div>
@@ -303,12 +303,12 @@
                     <div class="col-8 d-none d-lg-block">
                         <div id="waveform"></div>
                     </div>
-                    <div class="col d-none d-lg-block">
+                    <!--<div class="col d-none d-lg-block">
                         <small class="track-time mr-2 text-primary align-middle"></small>
                         <a data-toggle="control-sidebar">
                             <i class="icon fa fa-bars s-24 align-middle"></i>
                         </a>
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
@@ -316,15 +316,16 @@
             <!--Top Menu Start -->
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
+                        <kendo-switch [(ngModel)]="checked" (click)="switchBackground()" [onLabel]="'C'" [offLabel]="'B'"></kendo-switch>
+                   
 
-                    <!-- Right Sidebar Toggle Button -->
-                    <li class="searchOverlay-wrap">
+                    <!--<li class="searchOverlay-wrap">
                         <a href="#" id="btn-searchOverlay" class="nav-link mr-3 btn--searchOverlay no-ajaxy">
                             <i class="icon fa fa-search s-24"></i>
                         </a>
 
                     </li>
-                    <!-- User Account-->
+                    
                     <li class="dropup custom-dropdown user user-menu ">
                         <a href="#" class="nav-link" data-toggle="dropdown">
                             <figure class="avatar">
@@ -352,7 +353,7 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>

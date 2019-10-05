@@ -1,0 +1,41 @@
+.backButton {
+    padding: 4px 8px;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+    line-height: 1.4285714286;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    position: relative;
+    border-color: #ff6358;
+    color: #fff;
+    background-color: #ff6358;
+    background-image: linear-gradient(rgba(255,138,88,0),rgba(255,138,88,0.2));
+}
+
+.backButton:hover {
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .container-fluid {
+        height: 90vh !important;
+    }
+}

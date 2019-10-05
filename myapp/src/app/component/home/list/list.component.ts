@@ -10,7 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 export class ListComponent implements OnInit {
 
   public radioStation: any;
-
+  public selectedRadio: any;
+  public loading = true;
   constructor(private route: ActivatedRoute, private service: AppService) { }
 
   ngOnInit() {
@@ -19,8 +20,17 @@ export class ListComponent implements OnInit {
     this.service.getConfigurations('station', param).subscribe(
       data => {
         this.radioStation = data;
+        this.loading = false;
       }
     );
+  }
+
+  clickRadioDetails(selected) {
+    this.selectedRadio = selected;
+  }
+
+  back() {
+    this.selectedRadio = undefined;
   }
 
 }

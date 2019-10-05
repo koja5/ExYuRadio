@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url("../node_modules/@progress/kendo-theme-default/dist/all.css");
 
 :root{
     --blue:#03a9f4;
@@ -21834,4 +21834,8 @@ mat-basic-audio-player {
 
 .mb-auto, .my-auto {
     display: none !important;
+}
+
+a:hover {
+    cursor: pointer;
 }

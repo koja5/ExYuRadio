@@ -8,11 +8,22 @@ import { Component, Injectable, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
   public sidebar = 'sidebar-collapse';
+  public checked: boolean = false;
+  public theme: string;
+
   constructor() {
 
   }
 
   ngOnInit() {
+
+    if(localStorage.getItem('theme') === 'dark') {
+      this.theme = 'theme-dark';
+      this.checked = false;
+    } else {
+      this.theme = '';
+      this.checked = true;
+    }
     
   }
 
@@ -21,6 +32,17 @@ export class AppComponent implements OnInit {
       this.sidebar = 'sidebar-collapse'
     } else {
       this.sidebar = '';
+    }
+  }
+
+  switchBackground() {
+    console.log(this.checked);
+    if(!this.checked) {
+      localStorage.setItem('theme', 'dark');
+      this.theme = 'theme-dark';
+    } else {
+      localStorage.setItem('theme', 'light');
+      this.theme = ''
     }
   }
 
