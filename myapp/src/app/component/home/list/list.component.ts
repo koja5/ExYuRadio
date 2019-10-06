@@ -19,6 +19,7 @@ export class ListComponent implements OnInit {
     const param = this.route.snapshot.routeConfig.path;
     this.service.getConfigurations('station', param).subscribe(
       data => {
+        console.log(data);
         this.radioStation = data;
         this.loading = false;
       }

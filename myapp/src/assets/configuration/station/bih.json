@@ -1,0 +1,29 @@
+{
+    "description": {
+        "title": "Bosna i Hercegovina",
+        "text": "Najslušanije radio stanije u Bosni i Hercegovini!"
+    }, 
+    "stations": [
+        {
+        "img": "assets/img/demo/a18.jpg",
+        "title": "Zvornik, BiH",
+        "text": "Slavonski Brod, Hrvatska",
+        "url": "http://eu4.radioboss.fm:8058/live",
+        "website": "https://radio-savke.webs.com/"
+        },
+        {
+        "img": "assets/img/demo/a19.jpg",
+        "title": "Radio Foča",
+        "text": "Foča, BiH",
+        "url": "http://188.40.62.20:8068/;",
+        "website": "http://radiofoca.com/"
+        },
+        {
+        "img": "assets/img/demo/a20.jpg",
+        "title": "Običan Radio",
+        "text": "Mostar, BiH",
+        "url": "http://ca4.rcast.net:8010/;",
+        "website": "https://obican.ba/"
+        }
+    ]
+}

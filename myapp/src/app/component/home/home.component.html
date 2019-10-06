@@ -17,8 +17,8 @@
                       <div class="row">
                         <div class="col-12 col-lg-6 fadeInRight animated go">
                           <div class="xv-slider-content clearfix color-white">
-                            <h1 class="s-64 mt-5 font-weight-lighter">Dobrodosli!</h1>
-                            <p class="s-24 font-weight-lighter">Najveci izbor radio
+                            <h1 class="s-64 mt-5 font-weight-lighter">Dobrodošli!</h1>
+                            <p class="s-24 font-weight-lighter">Najveći izbor radio
                               stanica na Balkanu! <br>
                               ExYuRadio.rs.</p>
                             <div class="pt-3">
@@ -46,7 +46,7 @@
           <div class="d-flex relative align-items-center justify-content-between">
             <div class="mb-4">
               <h4>Popularne radio stanice</h4>
-              <p>Uzivajte u najpopularnijim radio stanicama!</p>
+              <p>Uživajte u najpopularnijim radio stanicama!</p>
             </div>
             <a [routerLink]="['/popular']">Cela lista<i class="fa fa-arrow-right ml-3"></i></a>
           </div>
@@ -56,7 +56,7 @@
                 data-item-lg="3" data-item-md="3" data-item-sm="2" data-auto="false" data-pager="false"
                 data-controls="true" data-loop="false"
                 style="width: 1380.17px; height: 268px; padding-bottom: 0%; transform: translate3d(0px, 0px, 0px);">
-                <div *ngFor="let item of popularRadio" class="lslide active"
+                <div *ngFor="let item of popularRadio.stations" class="lslide active"
                   style="width: 187.167px; margin-right: 10px;">
                   <figure>
                     <div class="img-wrapper">

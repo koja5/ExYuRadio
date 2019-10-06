@@ -6,12 +6,11 @@
         <div class="animated fadeInUpShort p-5 ml-lg-5 mr-lg-5 go">
             <section>
                 <div class="relative mb-5">
-                    <h1 class="mb-2 text-primary">Najpopularnije radio stanice</h1>
-                    <p>Spisak najpopularnijih radio stanica.</p>
-                    <p>Lista se svakodnevno azurira!</p>
+                    <h1 class="mb-2 text-primary">{{radioStation.description.title}}</h1>
+                    <p>{{radioStation.description.text}}</p>
                 </div>
                 <div class="row has-items-overlay">
-                    <div class="col-lg-3 col-md-4 col-sm-6 my-2" *ngFor="let item of radioStation">
+                    <div class="col-lg-3 col-md-4 col-sm-6 my-2" *ngFor="let item of radioStation.stations">
                         <figure>
                             <div class="img-wrapper">
                                 <img [src]="item.img" alt="/">
@@ -38,5 +37,5 @@
 
 </main>
 
-<app-single-radio *ngIf="selectedRadio !== undefined" [data]="selectedRadio" (backEvent)="back($event)">
+<app-single-radio *ngIf="selectedRadio !== undefined" [data]="selectedRadio" [allRadioStation]="radioStation.stations" (backEvent)="back($event)">
 </app-single-radio>

@@ -1,0 +1,15 @@
+{
+    "description": {
+        "title": "Dijaspora",
+        "text": "Najpopularnije radio stanice u dijaspori"
+    }, 
+    "stations": [
+        {
+            "img": "assets/img/demo/a17.jpg",
+            "title": "Radio Muzički Mlin",
+            "text": "Germany, Dijaspora",
+            "url": "http://shnpdecct1.dihostnet.com:8005/stream",
+            "website": ""
+        }
+    ]
+}

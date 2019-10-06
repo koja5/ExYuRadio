@@ -13,7 +13,10 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'popular', component: ListComponent },
   { path: 'serbia', component: ListComponent },
-  { path: 'macedonia', component: ListComponent },
+  { path: 'croatia', component: ListComponent },
+  { path: 'dijaspora', component: ListComponent },
+  { path: 'bih', component: ListComponent },
+  { path: 'slovenia', component: ListComponent },
   { path: 'single', component: SingleRadioComponent }
 ];
 

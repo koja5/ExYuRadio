@@ -1,0 +1,29 @@
+{
+    "description": {
+        "title": "Slovenija",
+        "text": "Spisak najpopularnijih radio stanica u Sloveniji!"
+    }, 
+    "stations": [
+        {
+            "img": "assets/img/demo/a21.jpg",
+            "title": "Radio Urnebes",
+            "text": "Metlika, Slovenija",
+            "url": "http://88.198.1.231:9356/;",
+            "website": "https://radiournebes.net/"
+        },
+        {
+            "img": "assets/img/demo/a22.jpg",
+            "title": "Radio S",
+            "text": "Ljubljana, Slovenija",
+            "url": "http://live3.infonetmedia.si:8000/radios",
+            "website": "http://www.radios.si/"
+        },
+        {
+            "img": "assets/img/demo/a23.jpg",
+            "title": "Radio Salomon Dance Now",
+            "text": "Ljubljana, Slovenija",
+            "url": "http://stream.radiosalomon.si/SalomonDanceNow",
+            "website": "http://radiosalomon.si/"
+        }
+    ]
+}

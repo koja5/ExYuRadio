@@ -1,0 +1,22 @@
+{
+    "description": {
+        "title": "Hrvatska",
+        "text": "Najslušanije radio stanije u Hrvarskoj!"
+    }, 
+    "stations": [
+        {
+        "img": "assets/img/demo/a15.jpg",
+        "title": "Play Slavonski Brod",
+        "text": "Slavonski Brod, Hrvatska",
+        "url": "http://50.7.129.122:8529/;",
+        "website": "http://laganini.fm/"
+        },
+        {
+        "img": "assets/img/demo/a16.jpg",
+        "title": "Radio Prkos",
+        "text": "Nova Gradiška, Hrvatska",
+        "url": "http://37.59.32.115:6124/stream;",
+        "website": "https://www.facebook.com/radioprkos/"
+        }
+    ]
+}

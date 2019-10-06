@@ -1,50 +1,64 @@
-[
-    {
+{
+    "description": {
+        "title": "",
+        "text": ""
+    }, 
+    "stations": [
+        {
         "img": "assets/img/demo/a8.jpg",
         "title": "Play Radio",
         "text": "107.7 FM",
-        "url": "http://naxi128.streaming.rs:9150/;*.mp3"
-    },
-    {
-        "img": "assets/img/demo/a2.jpg",
-        "title": "Hit FM",
-        "text": "99.9 FM",
-        "url": "http://streaming11.tdiradio.com:8000/hit"
-    },
-    {
-        "img": "assets/img/demo/a7.jpg",
-        "title": "Radio Rock",
-        "text": "122.2 FM",
-        "url": "http://ca6.rcast.net:4020/stream"
-    },
-    {
-        "img": "assets/img/demo/a8.jpg",
-        "title": "Play radio",
-        "text": "122.2 FM",
-        "url": "http://stream.playradio.rs:8001/play.mp3"
-    },
-    {
-        "img": "assets/img/demo/a4.jpg",
-        "title": "COOL Radio",
-        "text": "122.2 FM",
-        "url": "http://live.coolradio.rs/cool128"
-    },
-    {
-        "img": "assets/img/demo/a9.jpg",
-        "title": "RSG Radio",
-        "text": "122.2 FM",
-        "url": "http://stream.rsg.rs:8043/;*.mp3"
-    },
-    {
-        "img": "assets/img/demo/a10.jpg",
-        "title": "S1 Radio",
-        "text": "122.2 FM",
-        "url": "http://sradio1.ipradio.rs:9000/;*.mp3"
-    },
-    {
-        "img": "assets/img/demo/a13.jpg",
-        "title": "Radio 021",
-        "text": "122.2 FM",
-        "url": "http://109.206.96.106:8000/;*.mp3"
-    }
-]
+        "url": "http://naxi128.streaming.rs:9150/;*.mp3",
+        "website": "https://www.google.com"
+        },
+        {
+            "img": "assets/img/demo/a2.jpg",
+            "title": "Hit FM",
+            "text": "99.9 FM",
+            "url": "http://streaming11.tdiradio.com:8000/hit",
+            "website": "https://www.google.com"
+        },
+        {
+            "img": "assets/img/demo/a7.jpg",
+            "title": "Radio Rock",
+            "text": "122.2 FM",
+            "url": "http://ca6.rcast.net:4020/stream",
+            "website": "https://www.google.com"
+        },
+        {
+            "img": "assets/img/demo/a8.jpg",
+            "title": "Play radio",
+            "text": "122.2 FM",
+            "url": "http://stream.playradio.rs:8001/play.mp3",
+            "website": "https://www.google.com"
+        },
+        {
+            "img": "assets/img/demo/a4.jpg",
+            "title": "COOL Radio",
+            "text": "122.2 FM",
+            "url": "http://live.coolradio.rs/cool128",
+            "website": "https://www.google.com"
+        },
+        {
+            "img": "assets/img/demo/a9.jpg",
+            "title": "RSG Radio",
+            "text": "122.2 FM",
+            "url": "http://stream.rsg.rs:8043/;*.mp3",
+            "website": "https://www.google.com"
+        },
+        {
+            "img": "assets/img/demo/a10.jpg",
+            "title": "S1 Radio",
+            "text": "122.2 FM",
+            "url": "http://sradio1.ipradio.rs:9000/;*.mp3",
+            "website": "https://www.google.com"
+        },
+        {
+            "img": "assets/img/demo/a13.jpg",
+            "title": "Radio 021",
+            "text": "122.2 FM",
+            "url": "http://109.206.96.106:8000/;*.mp3",
+            "website": "https://www.google.com"
+        }
+    ]
+}
