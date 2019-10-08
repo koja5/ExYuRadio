@@ -39,6 +39,8 @@ html{
     -webkit-text-size-adjust:100%;
     -webkit-tap-highlight-color:transparent;
     overflow-x: hidden;
+    height: 100%;
+    overflow: hidden;
 }
 article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{
     display:block
@@ -53,6 +55,7 @@ body{
     text-align:left;
     background-color:#ecf0f5
 }
+
 [tabindex="-1"]:focus{
     outline:0!important
 }
@@ -21820,8 +21823,12 @@ nav.nav-flat .navbar-brand{
     margin: auto;
 }
 
+mat-card {
+    width: 45px !important;
+}
+
 mat-basic-audio-player {
-    width: 100% !important;
+    width: auto !important;
 }
 
 .ngx-basic-audio-player {
@@ -21838,4 +21845,23 @@ mat-basic-audio-player {
 
 a:hover {
     cursor: pointer;
+}
+
+.ngx-basic-audio-player-button-handler {
+    background: none !important;
+    color: #CA0427 !important;
+    font-size: 25px !important;
+}
+
+mat-card button {
+    font-size: 25px !important;
+}
+
+.container-fluid {
+    height: 95vh !important;
+    overflow: auto;
+}
+
+.fa-lg {
+    font-size: 3em !important;
 }

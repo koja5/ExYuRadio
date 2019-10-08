@@ -7,65 +7,86 @@
         {
             "img": "assets/img/demo/a8.jpg",
             "title": "Play Radio",
-            "text": "107.7 FM",
+            "text": "Beograd, Srbija",
             "url": "http://naxi128.streaming.rs:9150/;*.mp3",
-            "website": "https://www.google.com"
+            "website": "https://www.playradio.rs/"
         },
         {
             "img": "assets/img/demo/a2.jpg",
             "title": "Hit FM",
-            "text": "99.9 FM",
+            "text": "Beograd, Srbija",
             "url": "http://streaming11.tdiradio.com:8000/hit",
-            "website": "https://www.google.com"
+            "website": "http://www.hitfm.rs/site/"
         },
         {
             "img": "assets/img/demo/a7.jpg",
             "title": "Radio Rock",
-            "text": "122.2 FM",
+            "text": "Beograd, Srbija",
             "url": "http://ca6.rcast.net:4020/stream",
-            "website": "https://www.google.com"
-        },
-        {
-            "img": "assets/img/demo/a8.jpg",
-            "title": "Play radio",
-            "text": "122.2 FM",
-            "url": "http://stream.playradio.rs:8001/play.mp3",
-            "website": "https://www.google.com"
+            "website": "http://rockradio.rs/"
         },
         {
             "img": "assets/img/demo/a4.jpg",
             "title": "COOL Radio",
-            "text": "122.2 FM",
+            "text": "Beograd, Srbija",
             "url": "http://live.coolradio.rs/cool128",
-            "website": "https://www.google.com"
+            "website": "https://coolradio.rs/"
         },
         {
             "img": "assets/img/demo/a9.jpg",
             "title": "RSG Radio",
-            "text": "122.2 FM",
+            "text": "Kragujevac, Srbija",
             "url": "http://stream.rsg.rs:8043/;*.mp3",
-            "website": "https://www.google.com"
+            "website": "https://www.rsg.rs/"
         },
         {
             "img": "assets/img/demo/a10.jpg",
             "title": "S1 Radio",
-            "text": "122.2 FM",
+            "text": "Beograd, Srbija",
             "url": "http://sradio1.ipradio.rs:9000/;*.mp3",
-            "website": "https://www.google.com"
+            "website": "https://www.radios.rs/"
         },
         {
             "img": "assets/img/demo/a13.jpg",
             "title": "Radio 021",
-            "text": "122.2 FM",
+            "text": "Novi Sad, Srbija",
             "url": "http://109.206.96.106:8000/;*.mp3",
-            "website": "https://www.google.com"
+            "website": "https://www.021.rs/"
         },
         {
-            "img": "assets/img/demo/a13.jpg",
-            "title": "Radio 021",
-            "text": "122.2 FM",
-            "url": "http://109.206.96.106:8000/;*.mp3",
-            "website": "https://www.google.com"
+            "img": "assets/img/demo/a24.jpg",
+            "title": "Radio Klik Fm",
+            "text": "Bor, Srbija",
+            "url": "http://213.240.61.57:8000/stream",
+            "website": "http://www.klik995.net/"
+        },
+        {
+            "img": "assets/img/demo/a25.jpg",
+            "title": "Radio M",
+            "text": "Knjaževac, Srbija",
+            "url": "http://92.60.230.200:5090/stream",
+            "website": "http://rtvm.info/"
+        },
+        {
+            "img": "assets/img/demo/a26.jpg",
+            "title": "Radio Ada",
+            "text": "Ada, Srbija",
+            "url": "http://94.130.196.243:9010/;",
+            "website": "https://www.radioada.rs/"
+        },
+        {
+            "img": "assets/img/demo/a27.jpg",
+            "title": "Radio Bum 018",
+            "text": "Niš, Srbija",
+            "url": "http://213.240.61.35:8000/stream",
+            "website": "http://bumradio018.rs/"
+        },
+        {
+            "img": "assets/img/demo/a28.jpg",
+            "title": "Radio Šabac",
+            "text": "Šabac, Srbija",
+            "url": "http://95.211.166.127:8102/;",
+            "website": "http://www.sabac.tv/"
         }
     ]
 }

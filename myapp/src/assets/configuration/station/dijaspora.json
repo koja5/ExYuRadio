@@ -10,6 +10,48 @@
             "text": "Germany, Dijaspora",
             "url": "http://shnpdecct1.dihostnet.com:8005/stream",
             "website": ""
+        },
+        {
+            "img": "assets/img/demo/a31.jpg",
+            "title": "Radio Mirela",
+            "text": "Switzerland, Dijaspora",
+            "url": "http://88.198.1.231:9928/;",
+            "website": "http://radiomirela.net/"
+        },
+        {
+            "img": "assets/img/demo/a32.jpg",
+            "title": "Radio Croatica",
+            "text": "Hungary, Dijaspora",
+            "url": "http://78.139.48.85:8000/live.mp3",
+            "website": "http://radio.croatica.hu/"
+        },
+        {
+            "img": "assets/img/demo/a33.jpg",
+            "title": "XYUFM Radio Folk",
+            "text": "Netherlands, Dijaspora",
+            "url": "http://ample-zeno-15.radiojar.com/gr4wd8tbppeuv",
+            "website": "https://exyufm.coollective.nl/"
+        },
+        {
+            "img": "assets/img/demo/a34.jpg",
+            "title": "Jugoton Hit Radio",
+            "text": "Austria, Dijaspora",
+            "url": "http://s8.iqstreaming.com:8060/stream",
+            "website": "http://www.jugoton.com/"
+        },
+        {
+            "img": "assets/img/demo/a35.jpg",
+            "title": "Radio Pomoll",
+            "text": "Germany, Dijaspora",
+            "url": "http://shnpdecct1.dihostnet.com:8555/stream",
+            "website": "http://rtvpomoll.com/pomoll/"
+        },
+        {
+            "img": "assets/img/demo/a36.jpg",
+            "title": "Plus Radio Chicago",
+            "text": "USA, Dijaspora",
+            "url": "http://17483.live.streamtheworld.com/SP_R2603075_SC",
+            "website": "https://plusradio.us/"
         }
     ]
 }

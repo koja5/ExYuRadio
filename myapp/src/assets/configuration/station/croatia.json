@@ -17,6 +17,34 @@
         "text": "Nova Gradiška, Hrvatska",
         "url": "http://37.59.32.115:6124/stream;",
         "website": "https://www.facebook.com/radioprkos/"
+        },
+        {
+        "img": "assets/img/demo/a37.jpg",
+        "title": "Radio Visper",
+        "text": "Sisak, Hrvatska",
+        "url": "http://radiostream.optiklink.com:8100/live.mp3",
+        "website": "http://www.visper-radio.com/"
+        },
+        {
+        "img": "assets/img/demo/a38.jpg",
+        "title": "Unitas Radio",
+        "text": "Nova Gradiška, Hrvatska",
+        "url": "http://188.165.232.7:8498/;",
+        "website": "http://www.ngbuntovnici.hr/"
+        },
+        {
+        "img": "assets/img/demo/a39.jpg",
+        "title": "Radio Unidu",
+        "text": "Osijek, Hrvatska",
+        "url": "http://true.etfos.hr:8000/unidu",
+        "website": "http://www.uniduradio.com/"
+        },
+        {
+        "img": "assets/img/demo/a40.jpg",
+        "title": "Club Music Radio Tambura",
+        "text": "Nova Gradiška, Hrvatska",
+        "url": "http://cmr-hosting.com:8070/stream",
+        "website": "http://clubmusic-1.com/"
         }
     ]
 }

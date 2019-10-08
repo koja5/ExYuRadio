@@ -57,8 +57,20 @@
     top: -5%;
 }
 
+.favoriteItem {
+    color: #00A29A !important;
+}
+
+.fa-lg {
+    font-size: 5em !important;
+}
+
 @media(max-width: 768px) {
-    .pt-5 {
+    .radio-container {
         text-align: center;
+    }
+
+    .audio-player {
+        padding-left: 44% !important;
     }
 }

@@ -24,6 +24,20 @@
         "text": "Mostar, BiH",
         "url": "http://ca4.rcast.net:8010/;",
         "website": "https://obican.ba/"
+        },
+        {
+        "img": "assets/img/demo/a29.jpg",
+        "title": "Radio 074",
+        "text": "Doboj, BiH",
+        "url": "http://163.172.213.155:8024/;",
+        "website": "http://radio074.blogger.ba/"
+        },
+        {
+        "img": "assets/img/demo/a30.jpg",
+        "title": "Radio Krajina",
+        "text": "Cazin, BiH",
+        "url": "http://46.4.28.213:8004/stream",
+        "website": "https://cazin.ba/"
         }
     ]
 }

@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   public msbapDisplayTitle = false; 
   public msbapDisplayVolumeControls = true; 
   public popularRadio: any;
+  public selectedRadio: any;
 
   constructor(private service: AppService) {
 
@@ -26,6 +27,14 @@ export class HomeComponent implements OnInit {
         this.popularRadio = data;
       }
     )
+  }
+
+  clickRadioDetails(selected) {
+    this.selectedRadio = selected;
+  }
+
+  back() {
+    this.selectedRadio = undefined;
   }
 
   

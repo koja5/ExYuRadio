@@ -10,8 +10,8 @@
                         <div class="col-md-10 offset-1">
                             <button class="backButton" (click)="backToPreviousPage()"><i class="fa fa-arrow-left"></i>
                                 &nbsp; Vrati se nazad</button>
-                            <img src="assets/img/demo/reklama.jpg" class="adSense">
-                            <div class="row my-5 pt-5">
+                            <!--<img src="assets/img/demo/reklama.jpg" class="adSense">-->
+                            <div class="row my-5 pt-5 radio-container">
                                 <div class="col-md-3">
                                     <img [src]="data.img" alt="/">
                                 </div>
@@ -19,28 +19,27 @@
                                     <div class="d-md-flex align-items-center justify-content-between">
                                         <h1 class="my-3 text-white ">{{data.title}}</h1>
                                         <div class="ml-auto mb-2">
-                                            <a href="#" class="snackbar" data-text="Bookmark clicked"
+                                            <a (click)="addFavorite()" class="snackbar" data-text="Bookmark clicked"
                                                 data-pos="top-right" data-showaction="true" data-actiontext="ok"
                                                 data-actiontextcolor="#fff" data-backgroundcolor="#0c101b"><i
-                                                    class="fa fa-heart s-24"></i></a>
+                                                    class="fa fa-heart s-24 {{favoriteInd}}"></i></a>
                                             <a *ngIf="data.website !== ''" (click)="goToLink()" target="_blank"
                                                 class="snackbar ml-3" data-pos="top-right" data-showaction="true"
                                                 data-actiontext="ok" data-actiontextcolor="#fff"
                                                 data-backgroundcolor="#0c101b"><i class="fa fa-globe s-24"></i></a>
-                                            <a href="#" class="snackbar ml-3" data-text="Thanks for sharing"
+                                            <!--<a href="#" class="snackbar ml-3" data-text="Thanks for sharing"
                                                 data-pos="top-right" data-showaction="true" data-actiontext="ok"
                                                 data-actiontextcolor="#fff" data-backgroundcolor="#0c101b"><i
-                                                    class="fa fa-exclamation-triangle s-24"></i></a>
+                                                    class="fa fa-exclamation-triangle s-24"></i></a>-->
                                         </div>
                                     </div>
 
                                     <div class="text-white my-2">
                                         <p><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; {{data.text}}</p>
                                     </div>
-                                    <div class="pt-3">
-                                        <mat-basic-audio-player [audioUrl]="data.url" [title]="msbapTitle"
-                                            [displayTitle]="msbapDisplayTitle"
-                                            [displayVolumeControls]="msaapDisplayVolumeControls">
+                                    <div class="pt-3 audio-player">
+                                        <mat-basic-audio-player [audioUrl]="data.url" [title]="false"
+                                            [displayTitle]="false" [displayVolumeControls]="false">
                                         </mat-basic-audio-player>
                                     </div>
                                 </div>
@@ -68,11 +67,9 @@
                                                     <div class="col-6">
                                                         <h6>{{item.title}}</h6>
                                                     </div>
-                                                    <a href="#" class="ml-auto"><i class="fa fa-share-alt"></i></a>
-                                                    <div class="ml-auto">
-                                                        <a (click)="selectedRadioStation(item)"
-                                                            class="btn btn-outline-primary btn-sm d-none d-lg-block">Slusaj</a>
-                                                    </div>
+                                                    <a (click)="selectedRadioStation(item)"
+                                                        class="btn btn-outline-primary btn-sm ml-auto">Slusaj</a>
+
                                                 </div>
                                             </li>
                                         </ul>
