@@ -1,4 +1,4 @@
-<main id="pageContent" class="page has-sidebar">
+<main id="pageContent" class="page has-sidebar" *ngIf="selectedRadio === undefined">
   <div class="container-fluid relative animatedParent animateOnce no-p">
     <div class="animated fadeInUpShort go">
       <!--Banner Slider-->
@@ -64,9 +64,11 @@
                       <div class="img-overlay text-white">
                         <div class="figcaption">
                           <ul class="list-inline d-flex align-items-center justify-content-between">
-                            <mat-basic-audio-player [audioUrl]="item.url" [title]="msbapTitle"
-                              [displayTitle]="msbapDisplayTitle" [displayVolumeControls]="msaapDisplayVolumeControls">
-                            </mat-basic-audio-player>
+                            <li class="list-inline-item ">
+                              <a (click)="clickRadioDetails(item)">
+                                <i class="fa fa-play s-48"></i>
+                              </a>
+                            </li>
                           </ul>
                           <div class="text-center mt-5">
                             <h5>{{item.title}}</h5>
@@ -86,7 +88,7 @@
             </div>
           </div>
         </section>
-        
+
 
         <!--<section class="section">
           <div class="d-flex relative">
@@ -988,3 +990,7 @@
     </div>
   </div>
 </main>
+
+<app-single-radio *ngIf="selectedRadio !== undefined" [data]="selectedRadio" [allRadioStation]="popularRadio.stations"
+  (backEvent)="back($event)">
+</app-single-radio>

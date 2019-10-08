@@ -19,12 +19,14 @@ import 'hammerjs';
 //components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
-
-//services
-import { AppService } from './service/app.service';
 import { ListComponent } from './component/home/list/list.component';
 import { AboutUsComponent } from './component/home/about-us/about-us.component';
 import { SingleRadioComponent } from './component/home/list/single-radio/single-radio.component';
+
+//services
+import { AppService } from './service/app.service';
+import { MessageService } from './service/message.service';
+
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import { SingleRadioComponent } from './component/home/list/single-radio/single-
     InputsModule
   ],
   providers: [
-    AppService
+    AppService,
+    MessageService
   ],
   bootstrap: [AppComponent]
 })
