@@ -56,3 +56,9 @@
     right: -10%;
     top: -5%;
 }
+
+@media(max-width: 768px) {
+    .pt-5 {
+        text-align: center;
+    }
+}
