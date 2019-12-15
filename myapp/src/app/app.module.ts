@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxAudioPlayerModule } from 'ngx-audio-player';
 import { InputsModule } from '@progress/kendo-angular-inputs';
+import { ToastrModule } from 'ngx-toastr';
 
 import 'hammerjs';
 
@@ -46,7 +47,8 @@ import { MessageService } from './service/message.service';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     NgxAudioPlayerModule,
-    InputsModule
+    InputsModule,
+    ToastrModule.forRoot()
   ],
   providers: [
     AppService,
