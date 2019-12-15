@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'dijaspora', component: ListComponent },
   { path: 'bih', component: ListComponent },
   { path: 'slovenia', component: ListComponent },
-  { path: 'single', component: SingleRadioComponent }
+  { path: 'radio/:name', component: SingleRadioComponent }
 ];
 
 @NgModule({

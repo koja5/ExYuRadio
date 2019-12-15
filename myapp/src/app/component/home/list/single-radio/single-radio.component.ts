@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { MessageService } from './../../../../service/message.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: "app-single-radio",
@@ -13,11 +14,12 @@ export class SingleRadioComponent implements OnInit {
   public favoriteInd = '';
   public favorite = [];
 
-  constructor(private message: MessageService) { }
+  constructor(private message: MessageService, private route: ActivatedRoute,) { }
 
   ngOnInit() {
     console.log(window.innerHeight);
     this.checkFavoriteList();
+    console.log(this.route.snapshot.params);
 
     this.message.getRemoveFavoriteItem().subscribe(
       mess => {
