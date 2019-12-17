@@ -7,6 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { SingleRadioComponent } from './component/home/list/single-radio/single-radio.component';
+import { ContactComponent } from './component/home/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'dijaspora', component: ListComponent },
   { path: 'bih', component: ListComponent },
   { path: 'slovenia', component: ListComponent },
-  { path: 'radio/:country/:name', component: SingleRadioComponent }
+  { path: 'radio/:country/:name', component: SingleRadioComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({

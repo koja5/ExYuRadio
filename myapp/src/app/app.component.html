@@ -17,6 +17,10 @@
                                 src="./assets/img/flags/bosnia.png"></i>BIH</a>
                 <li class="ajaxifyPage"><a [routerLink]="['/slovenia']"><i class="icon s-24"><img class="flags-icon"
                                 src="./assets/img/flags/slovenia.png"></i>Slovenia</a>
+                <li class="ajaxifyPage"><a [routerLink]="['/contact']"><i class="icon s-24"><img class="flags-icon"
+                                src="./assets/img/flags/contact.png"></i>Kontakt</a>
+
+                <li class="ajaxifyPage copyrightMenu"><a href="mailto:webaj.info@gmail.com">&copy; WebAJ</a>
             </ul>
 
         </div>
@@ -50,7 +54,8 @@
                             </div>
                             <span class="badge badge-primary badge-pill"> {{item.text}}</span>
                             <a (click)="removeFromFavorite(i)" data-toggle="control-sidebar"
-                                class="paper-nav-toggle  active" style="top: 24% !important; right: -20px !important;"><i></i></a>
+                                class="paper-nav-toggle  active"
+                                style="top: 24% !important; right: -20px !important;"><i></i></a>
                         </div>
                     </li>
                 </ul>
@@ -251,7 +256,10 @@
             <!--Top Menu Start -->
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-
+                    <div>
+                        <a href="https://m.facebook.com/sveradiostanice" target="_blank"><img class="socialIcon" src="../assets/img/flags/facebook.png"></a>
+                        <a href="http://instagram.com/radiostanice/" target="_blank"><img class="socialIcon" src="../assets/img/flags/instagram.png"></a>
+                    </div>
                     <div class="col d-none d-lg-block">
                         <small class="track-time mr-2 text-primary align-middle"></small>
                         <a data-toggle="control-sidebar" (click)="openFavoriteSidebar()">

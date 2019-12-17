@@ -23,6 +23,7 @@ import { HomeComponent } from './component/home/home.component';
 import { ListComponent } from './component/home/list/list.component';
 import { AboutUsComponent } from './component/home/about-us/about-us.component';
 import { SingleRadioComponent } from './component/home/list/single-radio/single-radio.component';
+import { ContactComponent } from './component/home/contact/contact.component';
 
 //services
 import { AppService } from './service/app.service';
@@ -35,7 +36,8 @@ import { MessageService } from './service/message.service';
     HomeComponent,
     ListComponent,
     AboutUsComponent,
-    SingleRadioComponent
+    SingleRadioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

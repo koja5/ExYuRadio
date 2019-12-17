@@ -1,0 +1,36 @@
+{
+    "description": {
+        "title": "Crna Gora",
+        "text": "Najslušanije radio stanije u Crnoj Gori!"
+    }, 
+    "stations": [
+        {
+        "img": "assets/img/demo/a44.jpg",
+        "title": "Radio D Plus",
+        "text": "Podgorica, Crna Gora",
+        "url": "http://tachyon.shoutca.st:8303/xstream",
+        "website": "http://www.radioddplus.com/"
+        },
+        {
+        "img": "assets/img/demo/a45.jpg",
+        "title": "Radio D Podgorica",
+        "text": "Podgorica, Crna Gora",
+        "url": "http://tachyon.shoutca.st:8289/xstream",
+        "website": "http://www.radioddplus.com/"
+        },
+        {
+        "img": "assets/img/demo/a46.jpg",
+        "title": "Radio Renome",
+        "text": "Podgorica, Crna Gora",
+        "url": "http://5.9.25.50:9304/;",
+        "website": "http://radiorenome.com/"
+        },
+        {
+        "img": "assets/img/demo/a47.jpg",
+        "title": "Mag radio",
+        "text": "Doboj, BiH",
+        "url": "http://radio.elmag.me/mag.mp3",
+        "website": "https://www.magradio.me/"
+        }
+    ]
+}
