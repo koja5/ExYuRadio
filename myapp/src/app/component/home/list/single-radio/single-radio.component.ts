@@ -16,11 +16,13 @@ export class SingleRadioComponent implements OnInit {
   public favoriteInd = '';
   public favorite = [];
   public href: any;
+  public playLoader = false;
 
   constructor(private message: MessageService, private route: ActivatedRoute, private service: AppService, private router: Router, private toastr: ToastrService) { }
 
   ngOnInit() {
     console.log(window.innerHeight);
+    this.playLoader = false;
     this.checkFavoriteList();
     console.log(this.route);
     this.href = window.location.href;
@@ -36,6 +38,7 @@ export class SingleRadioComponent implements OnInit {
       data => {
         this.allRadioStation = data['stations'];
         this.data = this.getStationData(data);
+        this.playLoader = true;
       }
     );
   }

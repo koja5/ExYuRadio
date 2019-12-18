@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'popular', component: ListComponent },
   { path: 'serbia', component: ListComponent },
+  { path: 'crna-gora', component: ListComponent },
   { path: 'croatia', component: ListComponent },
   { path: 'dijaspora', component: ListComponent },
   { path: 'bih', component: ListComponent },
@@ -23,7 +24,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash:true})],
   exports: [RouterModule]
 })
 

@@ -42,7 +42,7 @@
                                         <p><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; {{data.text}}</p>
                                     </div>
                                     <div class="pt-3 audio-player">
-                                        <mat-basic-audio-player [audioUrl]="data.url" [title]="false"
+                                        <mat-basic-audio-player *ngIf="playLoader" [audioUrl]="data.url" [title]="false"
                                             [displayTitle]="false" [displayVolumeControls]="false">
                                         </mat-basic-audio-player>
                                     </div>
