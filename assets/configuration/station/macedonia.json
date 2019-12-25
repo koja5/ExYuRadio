@@ -1,0 +1,15 @@
+{
+    "description": {
+        "title": "",
+        "text": ""
+    }, 
+    "stations": [
+        {
+            "img": "assets/img/demo/a14.jpg",
+            "title": "Antenna 5",
+            "text": "107.7 FM",
+            "url": "http://antenna5stream.neotel.mk:8000/live64",
+            "website": "http://antenna5.com.mk/"
+        }
+    ]
+}

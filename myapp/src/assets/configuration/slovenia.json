@@ -1,0 +1,50 @@
+{
+    "description": {
+        "title": "Slovenija",
+        "text": "Spisak najpopularnijih radio stanica u Sloveniji!"
+    }, 
+    "stations": [
+        {
+            "img": "assets/img/demo/a21.jpg",
+            "title": "Radio Urnebes",
+            "text": "Metlika, Slovenija",
+            "url": "http://88.198.1.231:9356/;",
+            "website": "https://radiournebes.net/"
+        },
+        {
+            "img": "assets/img/demo/a22.jpg",
+            "title": "Radio S",
+            "text": "Ljubljana, Slovenija",
+            "url": "http://live3.infonetmedia.si:8000/radios",
+            "website": "http://www.radios.si/"
+        },
+        {
+            "img": "assets/img/demo/a23.jpg",
+            "title": "Radio Salomon Dance Now",
+            "text": "Ljubljana, Slovenija",
+            "url": "http://stream.radiosalomon.si/SalomonDanceNow",
+            "website": "http://radiosalomon.si/"
+        },
+        {
+            "img": "assets/img/demo/a41.jpg",
+            "title": "Radio Slovenske Gorice",
+            "text": "Lenart, Slovenija",
+            "url": "http://46.105.43.31:8050/stream",
+            "website": "http://www.rsg.si/"
+        },
+        {
+            "img": "assets/img/demo/a42.jpg",
+            "title": "Radio Sora",
+            "text": "Škofja Loka, Slovenija",
+            "url": "http://radio-sora.si:8000/radio-sora.mp3",
+            "website": "http://www.radio-sora.si/"
+        },
+        {
+            "img": "assets/img/demo/a43.jpg",
+            "title": "Radio Tomi",
+            "text": "Celje, Slovenija",
+            "url": "http://93.103.130.12:8080/tomi.mp3",
+            "website": "https://radiotomi.si/"
+        }
+    ]
+}

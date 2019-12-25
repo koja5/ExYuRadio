@@ -27,6 +27,10 @@
                                                 class="snackbar ml-3" data-pos="top-right" data-showaction="true"
                                                 data-actiontext="ok" data-actiontextcolor="#fff"
                                                 data-backgroundcolor="#0c101b"><i class="fa fa-globe s-24"></i></a>
+                                            <a (click)="copyLink()" target="_blank"
+                                                class="snackbar ml-3" data-pos="top-right" data-showaction="true"
+                                                data-actiontext="ok" data-actiontextcolor="#fff"
+                                                data-backgroundcolor="#0c101b"><i class="fa fa-copy  s-24"></i></a>
                                             <!--<a href="#" class="snackbar ml-3" data-text="Thanks for sharing"
                                                 data-pos="top-right" data-showaction="true" data-actiontext="ok"
                                                 data-actiontextcolor="#fff" data-backgroundcolor="#0c101b"><i
@@ -38,7 +42,7 @@
                                         <p><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; {{data.text}}</p>
                                     </div>
                                     <div class="pt-3 audio-player">
-                                        <mat-basic-audio-player [audioUrl]="data.url" [title]="false"
+                                        <mat-basic-audio-player *ngIf="playLoader" [audioUrl]="data.url" [title]="false"
                                             [displayTitle]="false" [displayVolumeControls]="false">
                                         </mat-basic-audio-player>
                                     </div>

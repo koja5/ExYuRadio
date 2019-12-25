@@ -7,21 +7,24 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { SingleRadioComponent } from './component/home/list/single-radio/single-radio.component';
+import { ContactComponent } from './component/home/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'popular', component: ListComponent },
   { path: 'serbia', component: ListComponent },
+  { path: 'crna-gora', component: ListComponent },
   { path: 'croatia', component: ListComponent },
   { path: 'dijaspora', component: ListComponent },
   { path: 'bih', component: ListComponent },
   { path: 'slovenia', component: ListComponent },
-  { path: 'single', component: SingleRadioComponent }
+  { path: 'radio/:country/:name', component: SingleRadioComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash:true})],
   exports: [RouterModule]
 })
 

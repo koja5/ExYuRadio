@@ -1,6 +1,6 @@
 import { AppService } from './../../../service/app.service';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -12,7 +12,7 @@ export class ListComponent implements OnInit {
   public radioStation: any;
   public selectedRadio: any;
   public loading = true;
-  constructor(private route: ActivatedRoute, private service: AppService) { }
+  constructor(private route: ActivatedRoute, private service: AppService, private router: Router) { }
 
   ngOnInit() {
     console.log(this.route.snapshot.routeConfig.path);
@@ -27,7 +27,8 @@ export class ListComponent implements OnInit {
   }
 
   clickRadioDetails(selected) {
-    this.selectedRadio = selected;
+    // this.selectedRadio = selected;
+    this.router.navigate(['/radio/' + this.route.snapshot.routeConfig.path + '/' + selected.title.split(' ').join('_') ])
   }
 
   back() {

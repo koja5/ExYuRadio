@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from 'src/app/service/app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,7 @@ export class HomeComponent implements OnInit {
   public popularRadio: any;
   public selectedRadio: any;
 
-  constructor(private service: AppService) {
+  constructor(private service: AppService, private router: Router) {
 
   }
 
@@ -30,11 +31,11 @@ export class HomeComponent implements OnInit {
   }
 
   clickRadioDetails(selected) {
-    this.selectedRadio = selected;
+    this.router.navigate(['radio/popular/' + selected.title.split(' ').join('_') ]);
   }
 
   back() {
-    this.selectedRadio = undefined;
+    this.router.navigate(['/']);
   }
 
   
